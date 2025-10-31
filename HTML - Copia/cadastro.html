@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <img src="imagens/logo.webp" alt="Logo da ONG Meu Aumigo" width="150">
+    <h1>Cadastro</h1>
+    <p>Para participar deste projeto conosco, preencha seus dados no cadastro abaixo e entraremos em contato com você...</p>
+    <p>Agradecemos desde já o seu interece e participação</p>
+<form>
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+        
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome">
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="CPF">CPF:</label>
+        <input type="text" id="CPF" name="CPF"
+                pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                       placeholder="000.000.000-00" title="Formato: 000.000.000-00">
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" 
+       placeholder="(00) 00000-0000" title="Formato: (00) 00000-0000">
+        
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
+        
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereço">
+        
+        <label for="CEP">CEP:</label>
+        <input type="text" id="CEP" name="CEP" pattern="[0-9]{5}-[0-9]{3}" 
+       placeholder="00000-000" title="Formato: 00000-000">
+            
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+        
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado">
+
+    </fieldset>
+<input type="submit" value="Enviar Cadastro">
+</form>
+<br>
+<img src="imagens/cachorro3.webp" alt="cachorro" width="115">
+<img src="imagens/abraço.webp" alt="abraço" width="160">
+<br>
+<img src="imagens/home.webp" alt="home" width="30"> 
+<a href="index.html"> Voltar para a Página Inicial</a>
+
+<footer>
+        <p>&copy; 2025 Meu Aumigo</p>
+        <p>Entre em contato meuaumigo@contato.com.br ou pelo telefone (XX)XXXX-XXXX </p>
+    </footer>
+
+</body>
+</html>
