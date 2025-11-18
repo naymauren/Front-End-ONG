@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Aumigo - Sobre</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<header class="container">
+    <img src="imagens/logo.webp" alt="Logo da ONG Meu Aumigo" width="150">
+</header>
+
+<nav class="container">
+    <span id="menu-btn">☰</span>
+    <ul id="menu-list">
+        <li><a href="index.html">Início</a></li>
+        <li>
+            <a href="#">Sobre</a>
+            <ul>
+                <li><a href="sobre.html">Quem Somos</a></li>
+            </ul>
+        </li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <h1>Quem Somos</h1>
+    <p>Somos um grupo dedicado ao bem-estar animal. Nossa ONG trabalha para resgatar, tratar e encontrar novos lares para cães e gatos abandonados.</p>
+
+    <p>Acreditamos que toda ajuda é importante. Seja você voluntário, doador ou apoiador, sua participação transforma vidas.</p>
+
+     <p>Para que haja essa troca de carinho e lares, precisamos da sua ajuda com cuidados com os animais não adotados, com a divulgação de nossos cachorrinhos disponíveis e de uma casa para adotá-los</p>
+
+     <p>Caso queira nos ajudar fazendo uma doação ou ser um voluntário entre em contato através de nosso email (contato@meuaumigo.org) ou telefone (XX)XXXX-XXXX</p>
+
+     <p>Mas para que cada animalzinho seja cuidado até ter um novo lar, temos diversas despesas e por isso pedimos a sua doação <strong>Pix:contato@meuaumigo.org</strong></p>
+
+     <br>
+     <img src="imagens/grade.webp" alt="cachorro na grade" width="150">
+     <img src="imagens/comendo.webp" alt="cachorro comendo" width="150">
+    <img src="imagens/cuidando.webp" alt="cuidados" width="150">
+    <br>
+    <img src="imagens/home.webp" alt="home" width="30">
+    <a href="index.html"> Voltar para a Página Inicial</a>
+</main>
+
+<footer>
+    <p>&copy; 2025 Meu Aumigo</p>
+    <p>Contato: meuaumigo@contato.com.br | (XX) XXXX-XXXX</p>
+</footer>
+
+<script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu-list");
+
+    btn.onclick = () => {
+        menu.classList.toggle("mobile-active");
+    }
+</script>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

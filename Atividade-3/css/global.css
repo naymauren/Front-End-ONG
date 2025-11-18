@@ -1,0 +1,28 @@
+:root {
+    --cor-primaria: #f4a261;
+    --cor-secundaria: #2a9d8f;
+    --cor-terciaria: #264653;
+    --cor-neutra-1: #ffffff;
+    --cor-neutra-2: #f1f1f1;
+    --cor-neutra-3: #cccccc;
+    --cor-neutra-4: #333333;
+
+    --fonte-titulo: 2.2rem;
+    --fonte-subtitulo: 1.8rem;
+    --fonte-grande: 1.4rem;
+    --fonte-media: 1.1rem;
+    --fonte-pequena: 0.95rem;
+
+    --sp-1: 8px;
+    --sp-2: 16px;
+    --sp-3: 24px;
+    --sp-4: 32px;
+    --sp-5: 48px;
+    --sp-6: 64px;
+}
+
+body {
+    margin: 0;
+    background: var(--cor-neutra-2);
+    font-family: Arial, sans-serif;
+}

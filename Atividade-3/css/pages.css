@@ -1,0 +1,11 @@
+header img {
+    margin-top: var(--sp-3);
+}
+
+footer {
+    margin-top: var(--sp-5);
+    background: var(--cor-terciaria);
+    color: white;
+    text-align: center;
+    padding: var(--sp-3);
+}
