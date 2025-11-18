@@ -3,51 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastro - Meu Aumigo</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
+
+<header class="container">
     <img src="imagens/logo.webp" alt="Logo da ONG Meu Aumigo" width="150">
+</header>
+
+<nav class="container">
+    <span id="menu-btn">☰</span>
+    <ul id="menu-list">
+        <li><a href="index.html">Início</a></li>
+        <li>
+            <a href="#">Sobre</a>
+            <ul>
+                <li><a href="sobre.html">Quem Somos</a></li>
+            </ul>
+        </li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+</nav>
+
+<main class="container">
     <h1>Cadastro</h1>
-    <p>Para participar deste projeto conosco, preencha seus dados no cadastro abaixo e entraremos em contato com você...</p>
-    <p>Agradecemos desde já o seu interece e participação</p>
-<form>
-    <fieldset>
-        <legend>Informações Pessoais</legend>
-        
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome">
-        
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email">
-        
-        <label for="CPF">CPF:</label>
-        <input type="text" id="CPF" name="CPF"
-                pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
-                       placeholder="000.000.000-00" title="Formato: 000.000.000-00">
+    <p>Para participar deste projeto, preencha seus dados no formulário abaixo. Entraremos em contato em breve.</p>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" 
-       placeholder="(00) 00000-0000" title="Formato: (00) 00000-0000">
-        
-        <label for="nascimento">Data de Nascimento:</label>
-        <input type="date" id="nascimento" name="nascimento">
-        
-        <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" name="endereço">
-        
-        <label for="CEP">CEP:</label>
-        <input type="text" id="CEP" name="CEP" pattern="[0-9]{5}-[0-9]{3}" 
-       placeholder="00000-000" title="Formato: 00000-000">
-            
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade">
-        
-        <label for="estado">Estado:</label>
-        <input type="text" id="estado" name="estado">
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
 
-    </fieldset>
-<input type="submit" value="Enviar Cadastro">
-</form>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" placeholder="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}">
+
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento">
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco">
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade">
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado">
+        </fieldset>
+
+        <input type="submit" value="Enviar Cadastro">
+    </form>
+</main>
+
 <br>
 <img src="imagens/cachorro3.webp" alt="cachorro" width="115">
 <img src="imagens/abraço.webp" alt="abraço" width="160">
@@ -56,9 +78,18 @@
 <a href="index.html"> Voltar para a Página Inicial</a>
 
 <footer>
-        <p>&copy; 2025 Meu Aumigo</p>
-        <p>Entre em contato meuaumigo@contato.com.br ou pelo telefone (XX)XXXX-XXXX </p>
-    </footer>
+    <p>&copy; 2025 Meu Aumigo</p>
+    <p>Contato: meuaumigo@contato.com.br | (XX) XXXX-XXXX</p>
+</footer>
+
+<script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu-list");
+
+    btn.onclick = () => {
+        menu.classList.toggle("mobile-active");
+    }
+</script>
 
 </body>
 </html>

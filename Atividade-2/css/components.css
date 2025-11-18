@@ -1,0 +1,95 @@
+/* Menu */
+nav {
+    background: var(--cor-terciaria);
+    padding: var(--sp-2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    padding: var(--sp-1) var(--sp-2);
+    display: inline-block;
+}
+
+/* Submenu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: var(--cor-secundaria);
+    padding: var(--sp-2);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Mobile */
+#menu-btn {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul { display: none; }
+    #menu-btn { display: block; }
+
+    nav ul.mobile-active {
+        display: block;
+    }
+
+    nav ul.mobile-active li {
+        display: block;
+        margin: var(--sp-2) 0;
+    }
+}
+
+/* Botões */
+input[type="submit"] {
+    background: var(--cor-primaria);
+    border: none;
+    padding: var(--sp-2) var(--sp-3);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+    background: var(--cor-secundaria);
+}
+
+/* Formulário */
+form fieldset {
+    border: 2px solid var(--cor-terciaria);
+    padding: var(--sp-3);
+    background: white;
+}
+
+label {
+    margin-top: var(--sp-2);
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: var(--sp-2);
+    margin-top: var(--sp-1);
+}
+
+/* Alert */
+.alert {
+    background: #ffe8a1;
+    padding: var(--sp-2);
+    border-left: 5px solid #e9c46a;
+    margin-top: var(--sp-3);
+}

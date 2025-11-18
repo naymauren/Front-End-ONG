@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Aumigo!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Aumigo - Início</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
-
 <body>
-    <header>
-        <img src="imagens/logo.webp" alt="Logo da ONG Meu Aumigo" width="150">
-        <h1>ONG Meu Aumigo!</h1>
-    </header>
 
-    <main>
-    <img src="imagens/cachorro1.webp" alt="Cachorrinho feliz após adoção" width="150">
-    <h2>Bem-vindo...</h2>
+<header class="container">
+    <img src="imagens/logo.webp" alt="Logo da ONG Meu Aumigo" width="150">
+</header>
+
+<nav class="container">
+    <span id="menu-btn">☰</span>
+    <ul id="menu-list">
+        <li><a href="index.html">Início</a></li>
+        <li>
+            <a href="#">Sobre</a>
+            <ul>
+                <li><a href="sobre.html">Quem Somos</a></li>
+            </ul>
+        </li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <h1>Bem-vindo ao Meu Aumigo</h1>
     <p>Somos a ONG <strong>Meu Aumigo</strong>, localizados em Londrina-PR, dedicados a ajudar cachorrinhos abandonados a encontrarem um lar cheio de amor e carinho.</p>
     <p>Cada <strong>Aumigo</strong> que chega até nós merece atenção, cuidado e uma família que o acolha para sempre</p>
     <p>Missão:Levar amor e esperança a animais abandonados, promovendo adoção responsável e conscientização sobre o cuidado com os pets.</p>
@@ -26,11 +42,25 @@
     <br><br>
     <img src="imagens/cadastro.webp" alt="Cadastro" width="50">
     <a href="cadastro.html">Clique aqui para fazer seu cadastro e participar.</a>
+
+    <div class="alert">
+        Aviso: Este site está em desenvolvimento para fins de estudo.
+    </div>
 </main>
 
 <footer>
     <p>&copy; 2025 Meu Aumigo</p>
-    <p>Entre em contato meuaumigo@contato.com.br ou pelo telefone (XX)XXXX-XXXX </p>
+    <p>Contato: meuaumigo@contato.com.br | (XX) XXXX-XXXX</p>
 </footer>
+
+<script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu-list");
+
+    btn.onclick = () => {
+        menu.classList.toggle("mobile-active");
+    }
+</script>
+
 </body>
 </html>
